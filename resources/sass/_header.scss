@@ -1,0 +1,139 @@
+#header {
+	.header-left,
+	.header-center,
+	.header-right {
+		display: flex;
+		align-items: center;
+	}
+
+	.header-center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header-right {
+		align-self: stretch;
+	}
+
+	.header-top {
+		border-bottom: 1px solid #f1ede9;
+
+		.top {
+			background-color: $background-color-header;
+			color: #fff;
+			padding: 2px;
+			text-align: center;
+
+			p {
+				margin: 0;
+			}
+		}
+
+		.bottom {
+			display: flex;
+
+			.header-right {
+				margin-left: auto;
+			}
+
+			ul {
+				padding: 0;
+				margin: 0;
+
+				li {
+					list-style: none;
+					display: inline-block;
+					padding: 10px 0;
+
+					a {
+						color: #4e4e4e;
+						display: block;
+
+						i {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.header-middle {
+		display: flex;
+		padding: 20px 0;
+
+		.form-search {
+			.input-group {
+				input {
+					border-right: none;
+					font-family: 'Lato', sans-serif;
+					font-weight: 100;
+					
+				}
+				button {
+					border: 1px solid #ced4da;
+					border-left: none;
+					color: #666;
+				}
+			}
+		}
+
+		.logo {
+		}
+
+		.login,
+		.cart {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.login {
+			color: #333;
+			margin-right: 15px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		a.bag {
+			background-image: url("/assets/images/icons/shopping-bag.png");
+			line-height: 36px;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			display: block;
+			color: #333;
+		}
+
+		.header-left {
+			order: 1;
+		}
+
+		.header-center {
+			order: 2;
+		}
+
+		.header-right {
+			order: 3;
+		}
+	}
+
+	.navbar {
+		background-color: $background-color-header;
+		padding: 0;
+
+		.navbar-collapse {
+			justify-content: center;
+
+			.navbar-nav {
+				.nav-link {
+					color: #333;
+					text-transform: uppercase;
+					padding: 10px 20px;
+				}
+			}
+		}
+	}
+}

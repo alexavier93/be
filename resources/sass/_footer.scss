@@ -1,0 +1,153 @@
+#footer {
+	color: #333;
+
+	.footer-top {
+		padding: 50px 0;
+
+		h2 {
+			font-family: "Segoe Script", sans-serif;
+			font-size: 28px;
+			color: #333;
+			margin-bottom: 22px;
+		}
+
+		p {
+			text-transform: uppercase;
+			font-size: 14px;
+			margin: 0;
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+
+			li {
+				list-style: none;
+				margin-bottom: 10px;
+
+				a {
+					color: #333;
+					font-weight: 300;
+					text-transform: uppercase;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-bottom {
+		padding: 40px 0;
+
+		.info {
+			.tel {
+				color: #666;
+				font-weight: 300;
+				font-size: 18px;
+				margin-bottom: 10px;
+
+				i {
+					font-size: 15px;
+				}
+			}
+
+			.fale-conosco {
+				background-color: $background-color-button;
+				color: #fff;
+				border: none;
+				border-radius: inherit;
+				font-size: 14px;
+				text-transform: uppercase;
+				padding: 6px 30px;
+				margin-bottom: 10px;
+
+				&:hover {
+					background-color: $background-color-button-hover;
+				}
+			}
+
+			.rede-sociais {
+				h5 {
+					font-size: 16px;
+					text-transform: uppercase;
+				}
+
+				ul {
+					padding: 0;
+					margin: 0;
+
+					li {
+						list-style: none;
+						display: inline-block;
+
+						a {
+							background: #333;
+							display: block;
+							color: #fff;
+							width: 30px;
+							height: 30px;
+							line-height: 1.8;
+							border-radius: 50%;
+							transition: 0.4s;
+
+							&:hover {
+								opacity: 0.9;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.newsletter {
+			h5 {
+				color: #666;
+				font-weight: 300;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+
+			form {
+				width: 300px;
+
+				input {
+					border: 1px solid #ddd;
+					border-radius: 0;
+					font-weight: 100;
+				}
+
+				button {
+					background-color: $background-color-button;
+					color: #fff;
+					border: none;
+					border-radius: inherit;
+					font-size: 14px;
+					text-transform: uppercase;
+					padding: 6px 30px;
+					margin-bottom: 10px;
+
+					&:hover {
+						background-color: $background-color-button-hover;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-copy {
+		background: $background-color-footer;
+		padding: 10px 20px;
+		color: #fff;
+
+		p {
+			margin: 0;
+			font-size: 14px;
+		}
+
+		.copy {
+			padding: 5px 0;
+		}
+	}
+}

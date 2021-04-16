@@ -1,0 +1,127 @@
+#product-page {
+    margin-top: 20px;
+
+    .content {
+        .banner-section {
+            padding: 20px;
+        }
+
+        .product-details {
+            padding: 20px;
+
+            .product-title {
+                font-size: 25px;
+                font-weight: 400;
+            }
+
+            .product-price {
+                font-size: 22px;
+
+                .price {
+                    font-weight: 600;
+                }
+    
+                .old-price {
+                    text-decoration: line-through;
+                    font-size: 14px;
+                }
+    
+                .new-price {
+                    font-weight: 600;
+                }
+
+            }
+
+            .product-description {
+                font-size: 16px;
+                font-weight: 100;
+                color: #333;
+                margin: 20px 0;
+            }
+
+            form {
+
+                .product-options {
+                    display: flex;
+                    align-items: baseline;
+                    flex-flow: row wrap;
+                    margin: 20px 0;
+    
+                    label {
+                        display: inline-block;
+                        width: 100px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                        color: #333;
+                    }
+
+                    .check-color {
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 4px;
+                        padding: 0;
+                    }
+
+                    input[type=radio]:checked+.check-color {
+                        -webkit-box-shadow: 0px 0px 0px 2px rgb(89 89 89 / 70%);
+                        -moz-box-shadow: 0px 0px 0px 2px rgba(89,89,89,0.7);
+                        box-shadow: 0px 0px 0px 2px rgb(89 89 89 / 70%);
+                    }
+                    
+    
+                    select {
+                        border-radius: 0;
+                    }
+    
+                    .qtd {
+                        input {
+                            width: 40px;
+                            text-align: center;
+                            border-left: none;
+                        }
+                        button {
+                            border-radius: 0;
+                            border: 1px solid #ced4da;
+                            i {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+    
+    
+                button.btn-buy {
+                    background-color: $background-color-button;
+                    color: #fff;
+                    border: none;
+                    border-radius: inherit;
+                    font-size: 18px;
+                    padding: 6px 30px;
+                    text-transform: uppercase;
+    
+                    &:hover {
+                        background-color: $background-color-button-hover;
+                    }
+                }
+
+            }
+
+            .add-wishlist {
+                margin-top: 20px;
+                
+                a {
+                    color: #333;
+
+                    i {
+                        color: #af9480;
+                    }
+
+                    
+                }
+            }
+
+        }
+    }
+}
